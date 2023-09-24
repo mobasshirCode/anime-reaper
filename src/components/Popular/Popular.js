@@ -1,4 +1,6 @@
 import React , {useState , useEffect} from 'react'
+import './Popular.scss'
+import AnimeCard from '../AnimeCard/AnimeCard'
 
 export default function Popular() {
 
@@ -18,10 +20,16 @@ const [details, setDetails] = useState([])
 
   return (
     <>
+    <h2 className='head'>Top Anime</h2>
+    <div className="innerContainer">
+    {details.map((element)=> {
+    return (
+      <AnimeCard imgurl={element.images.jpg.image_url} title={element.title_english}/>
+    )
+    })}
     
-    
-    
-    
+    </div>
+  
     </>
   )
 }

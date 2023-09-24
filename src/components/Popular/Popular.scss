@@ -1,0 +1,12 @@
+
+.head {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.innerContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
