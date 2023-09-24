@@ -1,11 +1,10 @@
 import React from 'react'
+import './Navbar.scss'
 
 export default function Navbar() {
   return (
     <>
-    <div style={{backgroundColor: "#192026",
-color:"white",
-padding:"10px"}}>
+    <div className='top'>
      <center><h1>ANIME REAPER</h1></center>
     </div>
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
