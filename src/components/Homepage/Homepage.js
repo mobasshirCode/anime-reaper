@@ -8,7 +8,7 @@ const [details, setDetails] = useState([])
 const [page, setPage] = useState(1)
 
   const topAnime = async()=> {
-    let url = `https://api.jikan.moe/v4/${props.content}?&order_by=${props.orderBy}&sort=${props.sort}&limit=24&page=${page}`
+    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page}`
     let data = await fetch(url)
     let parsedData = await data.json()
     // console.log(parsedData.data)
@@ -21,7 +21,7 @@ const [page, setPage] = useState(1)
   }, [])
 
   const loadMore = async()=> {
-    let url = `https://api.jikan.moe/v4/${props.content}?&order_by=${props.orderBy}&sort=${props.sort}&limit=24&page=${page+1}`
+    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page+1}`
     let data = await fetch(url)
     let parsedData = await data.json()
  setPage(page+1)
@@ -31,7 +31,7 @@ setDetails(details.concat(parsedData.data))
 
   return (
     <>
-    <h2 className='head'>Top Anime</h2>
+    <h2 className='head'>{props.head}</h2>
     <div className="innerContainer" >
     {details.map((element)=> {
     return (<>

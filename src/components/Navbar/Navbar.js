@@ -11,37 +11,25 @@ export default function Navbar() {
       <div className="second">
         <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/">TOP ANIME</a></li>
-            <li><a href="/">UPCOMING</a></li>
-            <li><a href="/">MANGA</a></li>
-            <li><a href="/">ABOUT</a></li>
+            <li><a href="/top">TOP ANIME</a></li>
+            <li><a href="/upcoming">UPCOMING</a></li>
+            <div className="dropdown">
+    <button className="dropbtn">RATING
+      <i className="fa fa-caret-down"></i>
+    </button>
+    <div className="dropdown-content">
+      <a href="/all">FAMILY</a>
+      <a href="/child">CHILDREN</a>
+      <a href="/teen">TEENS (13+)</a>
+      <a href="/17">VIOLANCE (17+)</a>
+      <a href="/18">MILD NUDITY</a>
+      <a href="/18+">HENTAI</a>
+    </div>
+  </div>
+            <li><a href="/manga">MANGA</a></li>
+            <li><a href="/about">ABOUT</a></li>
         </ul></div>
     </nav>
-    {/* <div className='top'>
-     <center><h1>ANIME REAPER</h1></center>
-    </div>
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div className="container-fluid">
-      <a className="navbar-brand" href="/">Anime</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="/">Popular</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/about">About</a>
-          </li>
-        </ul>
-        <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> */}
   </>
   )
 }
