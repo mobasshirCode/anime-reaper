@@ -1,14 +1,14 @@
 import React , {useState , useEffect} from 'react'
-import './Popular.scss'
+import './Homepage.scss'
 import AnimeCard from '../AnimeCard/AnimeCard'
 
-export default function Popular() {
+export default function Homepage(props) {
 
 const [details, setDetails] = useState([])
 const [page, setPage] = useState(1)
 
   const topAnime = async()=> {
-    let url = `https://api.jikan.moe/v4/top/anime?filter=bypopularity&limit=24&page=${page}`
+    let url = `https://api.jikan.moe/v4/anime?&order_by=${props.orderBy}&sort=${props.sort}&limit=24&page=${page}`
     let data = await fetch(url)
     let parsedData = await data.json()
     // console.log(parsedData.data)
@@ -21,7 +21,7 @@ const [page, setPage] = useState(1)
   }, [])
 
   const loadMore = async()=> {
-    let url = `https://api.jikan.moe/v4/top/anime?filter=bypopularity&page=${page+1}`
+    let url = `https://api.jikan.moe/v4/anime?&order_by=${props.orderBy}&sort=${props.sort}&limit=24&page=${page+1}`
     let data = await fetch(url)
     let parsedData = await data.json()
  setPage(page+1)
@@ -32,10 +32,10 @@ setDetails(details.concat(parsedData.data))
   return (
     <>
     <h2 className='head'>Top Anime</h2>
-    <div className="innerContainer">
+    <div className="innerContainer" >
     {details.map((element)=> {
     return (<>
-      <AnimeCard key={element.mal_id} imgurl={element.images.jpg.image_url} title={element.title_english} score={element.score}/>
+      <AnimeCard key={element.url} imgurl={element.images.jpg.image_url} title={element.title_english} score={element.score}/>
     </>)
     })}
     </div>
