@@ -4,7 +4,20 @@ import './Navbar.scss'
 export default function Navbar() {
   return (
     <>
-    <div className='top'>
+    <nav>
+      <div className="first">
+        <h3>ANIME REAPER</h3>
+      </div>
+      <div className="second">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">TOP ANIME</a></li>
+            <li><a href="/">UPCOMING</a></li>
+            <li><a href="/">MANGA</a></li>
+            <li><a href="/">ABOUT</a></li>
+        </ul></div>
+    </nav>
+    {/* <div className='top'>
      <center><h1>ANIME REAPER</h1></center>
     </div>
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -28,7 +41,7 @@ export default function Navbar() {
         </form>
       </div>
     </div>
-  </nav>
+  </nav> */}
   </>
   )
 }

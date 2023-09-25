@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Navbar/>
-      <Homepage orderBy="score" sort="desc"/>
+      <Homepage content="anime" orderBy="score" sort="desc"/>
     </div>
   )
 }

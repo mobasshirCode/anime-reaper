@@ -8,6 +8,11 @@
     border-radius: 15px;
     background-color: rgba(240, 248, 255, 0.066);
 }
+.card:hover{
+    box-shadow: 3px 3px 8px white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .card img {
     height: 420px;
     object-fit: cover;
