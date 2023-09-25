@@ -41,7 +41,7 @@ setDetails(details.concat(parsedData.data))
     <div className="innerContainer" >
     {details.map((element)=> {
     return (<>
-      <AnimeCard key={element.url} imgurl={element.images.jpg.large_image_url} title={element.title_english} score={element.score}/>
+      <AnimeCard key={element.url} imgurl={element.images.jpg.large_image_url} title={element.title_english} score={element.score} rank={element.rank}/>
     </>)
     })}
     </div>

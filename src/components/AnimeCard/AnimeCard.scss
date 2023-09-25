@@ -7,11 +7,12 @@
     position: relative;
     box-shadow: 4px 4px 4px black;
     border-radius: 15px;
+    transition: 0.3s ease-in-out;
     background-color: rgba(240, 248, 255, 0.066);
 }
 .card:hover{
-    box-shadow: 3px 3px 8px white;
-    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.08);
     cursor: pointer;
     h3 {
         display: block;
@@ -37,7 +38,7 @@
     border-radius: 0 0 15px 15px;
     display: none;
 }
-.card h6 {
+.score {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     width: 60px;
@@ -48,5 +49,18 @@
     position: absolute;
     top: 2px;
     right: 2px;
+    z-index: 99;
+}
+.rank {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    min-width: 40px;
+    padding: 1px 1px 1px 0px;
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
     z-index: 99;
 }
