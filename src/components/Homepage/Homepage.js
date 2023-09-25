@@ -8,23 +8,27 @@ const [details, setDetails] = useState([])
 const [page, setPage] = useState(1)
 
   const topAnime = async()=> {
-    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page}`
+    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=1`
     let data = await fetch(url)
     let parsedData = await data.json()
-    // console.log(parsedData.data)
+    console.log(url)
     setDetails(parsedData.data)
   }
   
   useEffect(() => {
-      topAnime()
-      // eslint-disable-next-line
-  }, [])
+    setPage(1);
+    window.scrollTo(0,0)
+    topAnime()
+    
+    // eslint-disable-next-line
+  }, [props.content])
 
   const loadMore = async()=> {
     let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page+1}`
     let data = await fetch(url)
     let parsedData = await data.json()
  setPage(page+1)
+ console.log(url)
 setDetails(details.concat(parsedData.data))
 
   }

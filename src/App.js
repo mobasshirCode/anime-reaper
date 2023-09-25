@@ -7,8 +7,8 @@ import Navbar from './components/Navbar/Navbar'
 export default function App() {
   return (
     <div>
-      <Navbar/>
       <BrowserRouter>
+      <Navbar/>
       <Routes>
       <Route exact path='/' element={<Homepage head="POPULAR RIGHT NOW" content="anime?&orderBy=popularity"/>}></Route>
       <Route exact path='/top' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc"/>}></Route>
