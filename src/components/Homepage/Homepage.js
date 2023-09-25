@@ -45,10 +45,11 @@ setDetails(details.concat(parsedData.data))
     </>)
     })}
     </div>
+
     <div className='btnc'>
     <button className='btnMore' onClick={loadMore}>Show more</button>
     </div>
-    <div className="hidden"><Link to="/treasure">HENTAI</Link></div>
+    <div className="hidden"><Link to="/treasure">.</Link></div>
     </>
   )
 }
