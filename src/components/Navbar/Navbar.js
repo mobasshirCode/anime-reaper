@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
     <nav>
       <div className="first">
-        <h3>ANIME REAPER</h3>
+        <a href='/'><h3>ANIME REAPER</h3></a>
       </div>
       <div className="second">
         <ul>
