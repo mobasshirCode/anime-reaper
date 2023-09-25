@@ -12,6 +12,7 @@ nav {
 }
 .first h3 {
     color: white;
+    
     margin-bottom: -1px;
     margin-left: 10px;
     font-weight:600;
@@ -32,13 +33,14 @@ nav ul li {
 
 }
 
-nav ul li a {
+nav ul li a , .first a{
     color: white;
+    text-shadow: 0 0 4px black;
     text-decoration: none;
     padding: 10px;
 }
 
-nav a:hover {
+nav ul a:hover {
     cursor: pointer;
     font-weight: 600;
     color: rgb(255, 255, 255);

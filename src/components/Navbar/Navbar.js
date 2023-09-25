@@ -25,7 +25,7 @@ export default function Navbar() {
       <Link to="/teen">TEENS (13+)</Link>
       <Link to="/17">VIOLANCE (17+)</Link>
       <Link to="/18">MILD NUDITY</Link>
-      <Link to="/18+">HENTAI</Link>
+      
     </div>
   </div>
             <li><Link to="/manga">MANGA</Link></li>

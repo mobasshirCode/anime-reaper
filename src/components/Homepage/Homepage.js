@@ -1,6 +1,8 @@
 import React , {useState , useEffect} from 'react'
 import './Homepage.scss'
 import AnimeCard from '../AnimeCard/AnimeCard'
+import { Link } from 'react-router-dom'
+
 
 export default function Homepage(props) {
 
@@ -46,6 +48,7 @@ setDetails(details.concat(parsedData.data))
     <div className='btnc'>
     <button className='btnMore' onClick={loadMore}>Show more</button>
     </div>
+    <div className="hidden"><Link to="/treasure">HENTAI</Link></div>
     </>
   )
 }
