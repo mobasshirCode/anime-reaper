@@ -26,6 +26,7 @@
     padding: 8px 15px;
     margin: 15px;
     border-radius: 8px;
+    cursor: pointer;
   }
   .hidden {
     background-color: rgba(0, 0, 0, 0);
@@ -38,4 +39,12 @@
   .hidden a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0);
+  }
+  #card {
+    padding: 0;
+    margin: 0;
+    
+  }
+  .info {
+    display: none;
   }

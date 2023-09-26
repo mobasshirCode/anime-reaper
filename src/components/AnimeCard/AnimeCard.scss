@@ -1,9 +1,10 @@
 .card {
     text-align: center;
     font-size: 20px;
-    width: 300px;
-    height: 420px;
+    width: 310px;
+    height: 450px;
     margin: 20px;
+    overflow: hidden;
     position: relative;
     box-shadow: 4px 4px 4px black;
     border-radius: 15px;
@@ -11,33 +12,71 @@
     background-color: rgba(240, 248, 255, 0.066);
 }
 .card:hover{
+    width: 310px;
     transition: 0.3s ease-in-out;
     transform: scale(1.08);
     cursor: pointer;
-    h3 {
+    #top-side {
         display: block;
+        color: white;
+        display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-left: 6px;
+    }
+    img {
+        transition: all 1s ease-in-out;
+        width: 100px;
+        height: 140px;
     }
 }
 .card img {
-    width: 100%;
-    height: 100%;
+    width: 310px;
+    height: 450px;
+    display: flex;
+    flex-flow: row;
     object-fit: cover;
+    transition: all 1s ease-in-out;
     border-radius: 15px ;
 }
-.card h3 {
+.top {
     display: flex;
-    justify-content: center;
-    color: white;
-    font-weight: 600;
-    text-shadow: 0 0 3px black;
-    background-color: rgba(0, 0, 0, 0.459);
-    width: 100%;
-    padding: 15px 0 15px 0;
-    position:absolute;
-    bottom: 0px;
-    border-radius: 0 0 15px 15px;
+}
+#top-side {
+    
     display: none;
 }
+.btn a{
+    text-decoration: none;
+    color: white;
+
+}
+.btn {
+    background-color: rgb(163, 66, 228);
+    border: 0;
+    outline: 0;
+    margin: 0px 2px 1px 4px ;
+    border-radius: 12px;
+    padding: 1px 30px;
+    cursor: pointer;
+
+}
+// .card h3 {
+//     display: flex;
+//     justify-content: center;
+//     color: white;
+//     font-weight: 600;
+//     text-shadow: 0 0 3px black;
+//     background-color: rgba(0, 0, 0, 0.459);
+//     width: 100%;
+//     padding: 15px 0px 15px 0px;
+//     position:absolute;
+//     bottom: 0px;
+//     border-radius: 0 0 15px 15px;
+//     display: none;
+// }
 .score {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -63,4 +102,14 @@
     top: 2px;
     left: 2px;
     z-index: 99;
+}
+.title {
+    color: white;
+    // letter-spacing: -0.5px;
+}
+.plot {
+   font-size: 10px;
+   color:  white;
+   letter-spacing: -0.3px;
+    // display: none;
 }
