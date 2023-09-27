@@ -46,14 +46,14 @@ export default function Homepage(props) {
                 score={element.score}
                 rank={element.rank}
                 type = {element.type}
-                plot={element.synopsis.slice(0,element.synopsis.length - 25)}
+                plot={element.synopsis!==null?(element.synopsis.includes("MAL")?element.synopsis.slice(0,element.synopsis.length - 25):element.synopsis):""}
                 aired={element.type==="TV"?element.aired.string:element.type==="Movie"?element.aired.string:""}
                 published={element.type==="Manga"?element.published.string:""}
-                duration={element.type!=="Manga"?element.duration:""}
+                duration={element.type!=="Manga"?element.duration:"Unknown"}
                 source={element.type!=="Manga"?element.source:""}
                 season={element.type!=="Manga"?element.season:""}
                 status={element.status}
-                ep={element.type!=="Manga"?element.episodes:""}
+                ep={element.type!=="Manga"?element.episodes:"Unknown"}
                 trailer={element.type==="TV"?element.trailer.url:element.type==="Movie"?element.trailer.url:""}
               />
               </div>
