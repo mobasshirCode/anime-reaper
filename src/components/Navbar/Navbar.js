@@ -1,10 +1,11 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import { useSearch } from '../SearchContext'
-
+// const searchbar = document.getElementById("sbox")
 
 export default function Navbar() {
+  const [style, setStyle] = useState("sbox")
 const {searchValue,setSearchValue} = useSearch();
 
 
@@ -12,6 +13,11 @@ const handleInputChange = (e) => {
   setSearchValue(e.target.value);
 }
 
+
+
+const changecss = ()=>{
+  setStyle("sbox1")
+}
   return (
     <> 
     <div className="header">   
@@ -19,8 +25,8 @@ const handleInputChange = (e) => {
           <a href='/'><h3>ANIME REAPER</h3></a>
         </div> 
         <div className="search">
-        <input type="search" name="search" id="sbox" value={searchValue} onChange={handleInputChange} />
-        <Link to={`/search?q=${searchValue}`}><button id='btn' ><i className="fa fa-search"></i></button> </Link>
+        <input type="search" name="search"  className={style}  value={searchValue} onChange={handleInputChange} />
+        <Link to={`/search?q=${searchValue}`}><button id='btn' onClick={changecss}  ><i className="fa fa-search" ></i></button> </Link>
         </div>
         </div>
       <nav id="pages">
@@ -46,4 +52,9 @@ const handleInputChange = (e) => {
       </nav>
     </>
   )
+  if(style==="sbox1"){
+    setInterval(() => {
+      setStyle("sbox")
+    }, 5000);
+    }
 }
