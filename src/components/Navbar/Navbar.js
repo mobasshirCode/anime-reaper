@@ -6,14 +6,11 @@ import { useSearch } from '../SearchContext'
 
 export default function Navbar() {
 const {searchValue,setSearchValue} = useSearch();
-// const [searchClicked,setSearchClicked] = useState(false);
+
 
 const handleInputChange = (e) => {
   setSearchValue(e.target.value);
 }
-// const handleSearch = ()=> {
-//   setSearchClicked(true);
-// }
 
   return (
     <> 
@@ -23,7 +20,7 @@ const handleInputChange = (e) => {
         </div> 
         <div className="search">
         <input type="search" name="search" id="sbox" value={searchValue} onChange={handleInputChange} />
-        <Link to={`/search?q=${searchValue}`}><button id='btn'><i class="fa fa-search"></i></button> </Link>
+        <Link to={`/search?q=${searchValue}`}><button id='btn' ><i className="fa fa-search"></i></button> </Link>
         </div>
         </div>
       <nav id="pages">

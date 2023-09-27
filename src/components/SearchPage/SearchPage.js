@@ -3,13 +3,17 @@ import "./SearchPage.scss";
 import AnimeCard from "../AnimeCard/AnimeCard";
 import { Link } from "react-router-dom";
 import { useSearch } from "../SearchContext";
+import useDebounce from "../useDebounce";
 
 
 export default function SearchPage(props) {
   const [details, setDetails] = useState([]);
 //   const [totalPage, setTotalPage] = useState([])
   const [page, setPage] = useState(1);
-  const {searchValue , setSearchValue } = useSearch();
+  const {searchValue } = useSearch();
+  const debouncedValue = useDebounce(searchValue, 500);
+// const {searchValue} = useSearch();
+// const [searchResults, setSearchResults] = useState([]);
 
   const SearchAnime = async () => {
     const url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=1`;
@@ -17,15 +21,18 @@ export default function SearchPage(props) {
     let parsedData = await data.json();
     // setTotalPage(parsedData.pagination);
     setDetails(parsedData.data);
-    setSearchValue("");
+    // setSearchValue("");
   };
 
-  useEffect(() => {
+  useEffect( () => {
+    
     setPage(1);
     window.scrollTo(0, 0);
+    if (debouncedValue) {
       SearchAnime();
+    }
       // eslint-disable-next-line
-  }, [props.content]);
+  }, [debouncedValue]);
 
   const loadMore = async () => {
     let url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=${page + 1}`;

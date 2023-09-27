@@ -20,7 +20,7 @@ export default function App() {
           <Route exact path='/teen' element={<Homepage head="TEEN ANIME" content="anime?&orderBy=score&sort=desc&rating=pg13" />}></Route>
           <Route exact path='/17' element={<Homepage head="17+ ANIME" content="anime?&orderBy=score&sort=desc&rating=r17" />}></Route>
           <Route exact path='/18' element={<Homepage head="MILD NUDITY ANIME" content="anime?&orderBy=score&sort=desc&rating=r" />}></Route>
-          <Route exact path='/treasure' element={<Homepage head="WELCOME TO THE HDDEN SECTION OF HENTAI" content="anime?&orderBy=score&sort=desc&rating=rx" />}></Route>
+          <Route exact path='/treasure' element={<Homepage head="WELCOME TO THE HIDDEN SECTION OF HENTAI" content="anime?&orderBy=score&sort=desc&rating=rx" />}></Route>
           <Route exact path='/manga' element={<Homepage head="TOP MANGA" content="manga?&orderBy=score&sort=desc" />}></Route>
           <Route exact path='/about' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc&rating=all" />}></Route>
           <Route exact path='/search' element={<SearchPage head="SEARCH RESULT" content="anime?q=" />}></Route>

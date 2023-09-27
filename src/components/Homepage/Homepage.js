@@ -15,7 +15,7 @@ export default function Homepage(props) {
      let parsedData = await data.json();
     //  setTotalPage(parsedData.pagination);
      setDetails(parsedData.data);
-     console.log(url)
+    //  console.log(url)
   };
 
   useEffect(() => {
