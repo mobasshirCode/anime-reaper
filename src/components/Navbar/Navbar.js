@@ -13,7 +13,11 @@ const handleInputChange = (e) => {
   setSearchValue(e.target.value);
 }
 
-
+if(style==="sbox1"){
+setInterval(() => {
+  setStyle("sbox")
+}, 5000);
+}
 
 const changecss = ()=>{
   setStyle("sbox1")
@@ -52,9 +56,4 @@ const changecss = ()=>{
       </nav>
     </>
   )
-  if(style==="sbox1"){
-    setInterval(() => {
-      setStyle("sbox")
-    }, 5000);
-    }
 }

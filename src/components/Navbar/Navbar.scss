@@ -37,6 +37,7 @@ nav {
   .sbox , .sbox1 {
   transition: width 2s ease-in-out;
   // padding: 8px 8px ;
+  margin-top: 1px;
   width: 250px;
   height: 30px;
   border: 0;
@@ -51,8 +52,8 @@ nav {
   transition:  width 2s ease-in-out;
   width: 1px;
   margin-right: 5px;
-  transform: scale(0.9);
-  // margin-top: 5px;
+  transform: scale(1);
+  margin-top: 1px;
   height: 30px;
   border: 0;
   outline: 0;
@@ -63,6 +64,7 @@ nav {
 .sbox1 {
   transition: width 2s ease-in-out;
   // padding: 8px 8px ;
+  margin-top: 1px;
   width: 250px;
   height: 30px;
   border: 0;
@@ -74,11 +76,11 @@ nav {
 
 #btn {
   // font-size: 15px;
-  height: 30px;
+  height: 32px;
   margin-left: -30px;
   // padding: 2px 8px ;
   position: relative;
-  width: 30px;
+  width: 32px;
   border-radius: 50%;
   border: 0;
   outline: 0;
