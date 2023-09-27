@@ -42,17 +42,20 @@ export default function Homepage(props) {
               <AnimeCard
                 key={element.url}
                 imgurl={element.images.jpg.large_image_url}
-                title={element.title_english}
+                title={!element.title_english?element.title:element.title_english}
                 score={element.score}
                 rank={element.rank}
+                type = {element.type}
                 plot={element.synopsis}
-                aired={element.aired.string}
-                duration={element.duration}
-                source={element.source}
-                season={element.season}
+                aired={element.type==="TV"?element.aired.string:element.type==="Movie"?element.aired.string:""}
+                // released={(element.type==="Movie")?element.aired.string:""}
+                published={element.type==="Manga"?element.published.string:""}
+                duration={element.type!=="Manga"?element.duration:""}
+                source={element.type!=="Manga"?element.source:""}
+                season={element.type!=="Manga"?element.season:""}
                 status={element.status}
-                ep={element.episodes}
-                trailer={element.trailer.url}
+                ep={element.type!=="Manga"?element.episodes:""}
+                trailer={element.type==="TV"?element.trailer.url:""}
               />
               </div>
             </>

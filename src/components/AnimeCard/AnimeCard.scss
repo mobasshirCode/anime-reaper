@@ -45,7 +45,6 @@
     display: flex;
 }
 #top-side {
-    
     display: none;
 }
 .btn a{
@@ -88,7 +87,7 @@
     position: absolute;
     top: 2px;
     right: 2px;
-    z-index: 99;
+    z-index: 9;
 }
 .rank {
     background-color: rgb(0, 0, 0);
@@ -101,7 +100,7 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    z-index: 99;
+    z-index: 9;
 }
 .title {
     color: white;

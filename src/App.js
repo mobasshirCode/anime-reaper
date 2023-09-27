@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Homepage head="POPULAR RIGHT NOW" content="anime?&orderBy=popularity" />}></Route>
+          <Route exact path='/' element={<Homepage head="POPULAR RIGHT NOW" content="top/anime?&filter=bypopularity" />}></Route>
           <Route exact path='/top' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc" />}></Route>
           <Route exact path='/upcoming' element={<Homepage head="UPCOMING ANIME" content="anime?&orderBy=popularity&status=upcoming" />}></Route>
           <Route exact path='/all' element={<Homepage head="FAMILY ANIME" content="anime?&orderBy=score&sort=desc&rating=g" />}></Route>
