@@ -1,9 +1,19 @@
 import React from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
+import { useSearch } from '../SearchContext'
 
 
 export default function Navbar() {
+const {searchValue,setSearchValue} = useSearch();
+// const [searchClicked,setSearchClicked] = useState(false);
+
+const handleInputChange = (e) => {
+  setSearchValue(e.target.value);
+}
+// const handleSearch = ()=> {
+//   setSearchClicked(true);
+// }
 
   return (
     <> 
@@ -12,12 +22,11 @@ export default function Navbar() {
           <a href='/'><h3>ANIME REAPER</h3></a>
         </div> 
         <div className="search">
-        <input type="search" name="" id="sbox" />
-        <Link to="/search" ><button id='btn'><i class="fa fa-search"></i></button> </Link>
+        <input type="search" name="search" id="sbox" value={searchValue} onChange={handleInputChange} />
+        <Link to={`/search?q=${searchValue}`}><button id='btn'><i class="fa fa-search"></i></button> </Link>
         </div>
         </div>
       <nav id="pages">
-        {/* <div id="second"> */}
           <ul>
             <li><Link to="/">HOME</Link></li>
             <li><Link to="/top">TOP ANIME</Link></li>
@@ -37,10 +46,7 @@ export default function Navbar() {
             <li><Link to="/manga">MANGA</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
           </ul>
-          {/* </div> */}
       </nav>
-          {/* <hr /> */}
-      {/* </div> */}
     </>
   )
 }

@@ -1,0 +1,50 @@
+
+.head {
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgb(26, 7, 44);
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.innerContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .btnc {
+      display: flex;
+      justify-content: center;
+
+  }
+  .btnMore {
+    background-color: rgb(89, 89, 228);
+    font-size: 16px;
+    color: white;
+    padding: 8px 15px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .hidden {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2000px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .hidden a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+  }
+  #card {
+    padding: 0;
+    margin: 0;
+    
+  }
+  .info {
+    display: none;
+  }

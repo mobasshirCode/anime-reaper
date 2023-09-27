@@ -3,11 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './components/Homepage/Homepage'
 import './App.scss'
 import Navbar from './components/Navbar/Navbar'
-
+import { SearchProvider } from './components/SearchContext'
+import SearchPage from './components/SearchPage/SearchPage'
 export default function App() {
   return (
     <div>
       <BrowserRouter>
+      <SearchProvider>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Homepage head="POPULAR RIGHT NOW" content="top/anime?&filter=bypopularity" />}></Route>
@@ -21,8 +23,9 @@ export default function App() {
           <Route exact path='/treasure' element={<Homepage head="WELCOME TO THE HDDEN SECTION OF HENTAI" content="anime?&orderBy=score&sort=desc&rating=rx" />}></Route>
           <Route exact path='/manga' element={<Homepage head="TOP MANGA" content="manga?&orderBy=score&sort=desc" />}></Route>
           <Route exact path='/about' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc&rating=all" />}></Route>
-          <Route exact path='/search' element={<Homepage head="SEARCH RESULT" content="manga?&orderBy=score&sort=desc" />}></Route>
+          <Route exact path='/search' element={<SearchPage head="SEARCH RESULT" content="anime?q=" />}></Route>
         </Routes>
+        </SearchProvider>
       </BrowserRouter>
 
     </div>

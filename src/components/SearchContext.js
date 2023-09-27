@@ -9,6 +9,7 @@ export function useSearch() {
 export function SearchProvider({ children }) {
   const [searchValue, setSearchValue] = useState('');
 
+
   return (
     <SearchContext.Provider value={{ searchValue, setSearchValue }}>
       {children}

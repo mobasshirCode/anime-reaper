@@ -1,32 +1,34 @@
 import React, { useState, useEffect } from "react";
-import "./Homepage.scss";
+import "./SearchPage.scss";
 import AnimeCard from "../AnimeCard/AnimeCard";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useSearch } from "../SearchContext";
 
 
-export default function Homepage(props) {
+export default function SearchPage(props) {
   const [details, setDetails] = useState([]);
-  // const [totalPage, setTotalPage] = useState([])
+//   const [totalPage, setTotalPage] = useState([])
   const [page, setPage] = useState(1);
+  const {searchValue , setSearchValue } = useSearch();
 
-  const topAnime = async () => {   
-     const url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=1`;
-     let data = await fetch(url);
-     let parsedData = await data.json();
-    //  setTotalPage(parsedData.pagination);
-     setDetails(parsedData.data);
-     console.log(url)
+  const SearchAnime = async () => {
+    const url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=1`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    // setTotalPage(parsedData.pagination);
+    setDetails(parsedData.data);
+    setSearchValue("");
   };
 
   useEffect(() => {
     setPage(1);
     window.scrollTo(0, 0);
-      topAnime();
-    // eslint-disable-next-line
+      SearchAnime();
+      // eslint-disable-next-line
   }, [props.content]);
 
   const loadMore = async () => {
-    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page + 1}`;
+    let url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=${page + 1}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setPage(page + 1);
