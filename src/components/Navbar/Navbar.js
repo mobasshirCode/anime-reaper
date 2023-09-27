@@ -10,6 +10,7 @@ export default function Navbar() {
         <div className="logo">
           <a href='/'><h3>ANIME REAPER</h3></a>
         </div>
+        
       <nav id="pages">
         {/* <div id="second"> */}
           <ul>
@@ -33,6 +34,7 @@ export default function Navbar() {
           </ul>
           {/* </div> */}
       </nav>
+          {/* <hr /> */}
       {/* </div> */}
     </>
   )

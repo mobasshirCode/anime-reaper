@@ -9,7 +9,7 @@
     box-shadow: 4px 4px 4px black;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
-    background-color: rgba(240, 248, 255, 0.066);
+    background-color: rgba(240, 248, 255, 0.001);
 }
 .card:hover{
     width: 310px;
@@ -45,6 +45,7 @@
     display: flex;
 }
 #top-side {
+    
     display: none;
 }
 .btn a{
@@ -109,6 +110,8 @@
 .plot {
    font-size: 10px;
    color:  white;
+   font-weight: 500;
+   text-shadow: 0 0 4px black;
    letter-spacing: -0.3px;
     // display: none;
 }
