@@ -49,11 +49,11 @@ export default function Homepage(props) {
                 plot={element.synopsis!==null?(element.synopsis.includes("MAL")?element.synopsis.slice(0,element.synopsis.length - 25):element.synopsis):""}
                 aired={element.type==="TV"?element.aired.string:element.type==="Movie"?element.aired.string:""}
                 published={element.type==="Manga"?element.published.string:""}
-                duration={element.type!=="Manga"?element.duration:"Unknown"}
+                duration={element.type!=="Manga"?element.duration:""}
                 source={element.type!=="Manga"?element.source:""}
                 season={element.type!=="Manga"?element.season:""}
                 status={element.status}
-                ep={element.type!=="Manga"?element.episodes:"Unknown"}
+                ep={element.type!=="Manga"?element.episodes:""}
                 trailer={element.type==="TV"?element.trailer.url:element.type==="Movie"?element.trailer.url:""}
               />
               </div>

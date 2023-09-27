@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
+
   return (
     <> 
-    {/* <div className="header">    */}
+    <div className="header">   
         <div className="logo">
           <a href='/'><h3>ANIME REAPER</h3></a>
+        </div> 
+        <div className="search">
+        <input type="search" name="" id="sbox" />
+        <Link to="/search" ><button id='btn'><i class="fa fa-search"></i></button> </Link>
         </div>
-        
+        </div>
       <nav id="pages">
         {/* <div id="second"> */}
           <ul>
@@ -18,8 +23,8 @@ export default function Navbar() {
             <li><Link to="/top">TOP ANIME</Link></li>
             <li><Link to="/upcoming">UPCOMING</Link></li>
             <div className="dropdown">
-              <button className="dropbtn">RATING
-                <i className="fa fa-caret-down"></i>
+              <button className="dropbtn">RATING{" "}
+              <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
                 <Link to="/all">FAMILY</Link>

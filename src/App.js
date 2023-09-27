@@ -21,6 +21,7 @@ export default function App() {
           <Route exact path='/treasure' element={<Homepage head="WELCOME TO THE HDDEN SECTION OF HENTAI" content="anime?&orderBy=score&sort=desc&rating=rx" />}></Route>
           <Route exact path='/manga' element={<Homepage head="TOP MANGA" content="manga?&orderBy=score&sort=desc" />}></Route>
           <Route exact path='/about' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc&rating=all" />}></Route>
+          <Route exact path='/search' element={<Homepage head="SEARCH RESULT" content="manga?&orderBy=score&sort=desc" />}></Route>
         </Routes>
       </BrowserRouter>
 
