@@ -8,7 +8,7 @@ import useDebounce from "../useDebounce";
 
 export default function SearchPage(props) {
   const [details, setDetails] = useState([]);
-//   const [totalPage, setTotalPage] = useState([])
+  const [showMore, setShowMore] = useState(false)
   const [page, setPage] = useState(1);
   const {searchValue } = useSearch();
   const debouncedValue = useDebounce(searchValue, 500);
@@ -21,6 +21,7 @@ export default function SearchPage(props) {
     let parsedData = await data.json();
     // setTotalPage(parsedData.pagination);
     setDetails(parsedData.data);
+    setShowMore(true);
     // setSearchValue("");
   };
 
@@ -71,13 +72,14 @@ export default function SearchPage(props) {
           );
         })}
       </div>
-       
-      <div className="btnc">
+     {showMore && (<div className="btnc">
           <button className="btnMore" onClick={loadMore}>
           Show more
         </button>
         
-      </div>
+      </div>)}
+      
+
       <div className="hidden">
         <Link to="/treasure">.</Link>
       </div>
