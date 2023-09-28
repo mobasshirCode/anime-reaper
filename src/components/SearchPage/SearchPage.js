@@ -16,7 +16,7 @@ export default function SearchPage(props) {
 // const [searchResults, setSearchResults] = useState([]);
 
   const SearchAnime = async () => {
-    const url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=1`;
+    const url = `https://api.jikan.moe/v4/${props.content}${searchValue}&sfw&limit=24&page=1`;
     let data = await fetch(url);
     let parsedData = await data.json();
     // setTotalPage(parsedData.pagination);
@@ -35,7 +35,7 @@ export default function SearchPage(props) {
   }, [debouncedValue]);
 
   const loadMore = async () => {
-    let url = `https://api.jikan.moe/v4/${props.content}${searchValue}&limit=24&page=${page + 1}`;
+    let url = `https://api.jikan.moe/v4/${props.content}${searchValue}&sfw&limit=24&page=${page + 1}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setPage(page + 1);

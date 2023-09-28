@@ -1,11 +1,13 @@
 import React , {useState} from 'react'
 import './Navbar.scss'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import { useSearch } from '../SearchContext'
 // const searchbar = document.getElementById("sbox")
 
 export default function Navbar() {
   const [style, setStyle] = useState("sbox")
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked")
 const {searchValue,setSearchValue} = useSearch();
 
 
@@ -18,9 +20,16 @@ setInterval(() => {
   setStyle("sbox")
 }, 5000);
 }
-
 const changecss = ()=>{
   setStyle("sbox1")
+}
+const updateMenu = ()=> {
+  if(!menuOpen){
+setBurgerClass("burger-bar clicked")
+  }
+  else {
+    setBurgerClass("burger-bar unclicked")
+  }
 }
   return (
     <> 
@@ -34,24 +43,33 @@ const changecss = ()=>{
         </div>
         </div>
       <nav id="pages">
-          <ul>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/top">TOP ANIME</Link></li>
-            <li><Link to="/upcoming">UPCOMING</Link></li>
+        <div className="menu" onClick={()=>{
+          setMenuOpen(!menuOpen)
+        }}>
+          <span className={burgerClass} onClick={updateMenu}></span>
+          <span className={burgerClass} onClick={updateMenu}></span>
+          <span className={burgerClass} onClick={updateMenu}></span>
+        </div>
+          <ul className={menuOpen ? "open" : ""}>
+            <li><NavLink to="/">HOME</NavLink></li>
+            <li><NavLink to="/top">TOP ANIME</NavLink></li>
+            <li><NavLink to="/upcoming">UPCOMING</NavLink></li>
+            <li><NavLink to="/airing">ONGOING</NavLink></li>
+            <li><NavLink to="/finished">FINISHED</NavLink></li>
             <div className="dropdown">
               <button className="dropbtn">RATING{" "}
               <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-                <Link to="/all">FAMILY</Link>
-                <Link to="/child">CHILDREN</Link>
-                <Link to="/teen">TEENS (13+)</Link>
-                <Link to="/17">VIOLANCE (17+)</Link>
-                <Link to="/18">MILD NUDITY</Link>
+                <NavLink to="/all">FAMILY</NavLink>
+                <NavLink to="/child">CHILDREN</NavLink>
+                <NavLink to="/teen">TEENS (13+)</NavLink>
+                <NavLink to="/17">VIOLANCE (17+)</NavLink>
+                <NavLink to="/18">MILD NUDITY</NavLink>
               </div>
             </div>
-            <li><Link to="/manga">MANGA</Link></li>
-            <li><Link to="/about">ABOUT</Link></li>
+            <li><NavLink to="/manga">MANGA</NavLink></li>
+            <li><NavLink to="/about">ABOUT</NavLink></li>
           </ul>
       </nav>
     </>
