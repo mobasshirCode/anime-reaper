@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import './Navbar.scss'
 import { Link,NavLink } from 'react-router-dom'
 import { useSearch } from '../SearchContext'
+import { FaArrowUp } from 'react-icons/fa'
 // const searchbar = document.getElementById("sbox")
 
 export default function Navbar() {
@@ -31,6 +32,23 @@ setBurgerClass("burger-bar clicked")
     setBurgerClass("burger-bar unclicked")
   }
 }
+let calcScrollValue = ()=> {
+  let scrollProgress = document.getElementById("progress");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos*100)/calcHeight);
+  if (pos>100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", ()=>{
+document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(rgb(89, 89, 228) ${scrollValue}% , black ${scrollValue}%)`
+}
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
   return (
     <> 
     <div className="header">   
@@ -71,9 +89,13 @@ setBurgerClass("burger-bar clicked")
               </div>
             </div>
             <li><NavLink to="/manga">MANGA</NavLink></li>
-            {/* <li><NavLink to="/about">ABOUT</NavLink></li> */}
           </ul>
       </nav>
+      <div id="progress">
+        {/* <span id="progress-value">&#x1F861;</span> */}
+        <span id="progress-value"><FaArrowUp/></span>
+        
+      </div>
     </>
   )
 }
