@@ -43,9 +43,9 @@
 }
 .top {
     display: flex;
+    
 }
 #top-side {
-    
     display: none;
 }
 .btn a{
@@ -63,20 +63,7 @@
     cursor: pointer;
 
 }
-// .card h3 {
-//     display: flex;
-//     justify-content: center;
-//     color: white;
-//     font-weight: 600;
-//     text-shadow: 0 0 3px black;
-//     background-color: rgba(0, 0, 0, 0.459);
-//     width: 100%;
-//     padding: 15px 0px 15px 0px;
-//     position:absolute;
-//     bottom: 0px;
-//     border-radius: 0 0 15px 15px;
-//     display: none;
-// }
+
 .score {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -107,7 +94,6 @@
     font-weight: 900;
     color: rgb(89, 89, 228);
     text-shadow: 0 0 1px black;
-    // letter-spacing: -0.5px;
 }
 .plot {
    font-size: 10px;
@@ -115,5 +101,4 @@
    font-weight: 500;
    text-shadow: 0 0 4px black;
    letter-spacing: -0.3px;
-    // display: none;
 }

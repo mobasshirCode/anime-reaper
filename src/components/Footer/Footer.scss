@@ -26,7 +26,7 @@ hr{
     margin: auto;
    width: 80%;
 }
-.top {
+.topc {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -125,7 +125,7 @@ color:rgb(89, 89, 228) ;
 }
 
 @media  screen and (max-width:720px) {
-    .top {
+    .topc {
         grid-template-columns: 1fr;
     }
     .cont{

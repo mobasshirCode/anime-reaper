@@ -8,7 +8,7 @@ export default function Footer() {
         <>
             <div className="container">
                 <div className="footer">
-                    <div className="top">
+                    <div className="topc">
                         <div className="cont cont1">
                             <h3>ANIME REAPER</h3>
 
