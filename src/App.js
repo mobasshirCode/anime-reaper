@@ -5,6 +5,7 @@ import './App.scss'
 import Navbar from './components/Navbar/Navbar'
 import { SearchProvider } from './components/SearchContext'
 import SearchPage from './components/SearchPage/SearchPage'
+import Footer from './components/Footer/Footer'
 export default function App() {
   return (
     <div>
@@ -27,6 +28,7 @@ export default function App() {
           <Route exact path='/about' element={<Homepage head="TOP ANIME" content="anime?&orderBy=score&sort=desc&rating=all" />}></Route>
           <Route exact path='/search' element={<SearchPage head="SEARCH RESULT" content="anime?q=" />}></Route>
         </Routes>
+        <Footer/>
         </SearchProvider>
       </BrowserRouter>
 

@@ -10,7 +10,7 @@ export default function Homepage(props) {
   const [page, setPage] = useState(1);
 
   const topAnime = async () => {
-    const url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=1`;
+    const url = `https://api.jikan.moe/v4/${props.content}&limit=25&page=1`;
     let data = await fetch(url);
     let parsedData = await data.json();
     //  setTotalPage(parsedData.pagination);
@@ -27,7 +27,7 @@ export default function Homepage(props) {
   }, [props.content]);
 
   const loadMore = async () => {
-    let url = `https://api.jikan.moe/v4/${props.content}&limit=24&page=${page + 1}`;
+    let url = `https://api.jikan.moe/v4/${props.content}&limit=25&page=${page + 1}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setPage(page + 1);
@@ -36,7 +36,7 @@ export default function Homepage(props) {
 
   return (
     <>
-      <h2 className="head">{props.head}</h2>
+      <h2 className="head">{props.head}</h2>      
       <div className="innerContainer">
         {details.map((element) => {
           return (

@@ -69,7 +69,7 @@ setBurgerClass("burger-bar clicked")
               </div>
             </div>
             <li><NavLink to="/manga">MANGA</NavLink></li>
-            <li><NavLink to="/about">ABOUT</NavLink></li>
+            {/* <li><NavLink to="/about">ABOUT</NavLink></li> */}
           </ul>
       </nav>
     </>

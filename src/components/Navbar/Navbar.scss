@@ -109,8 +109,8 @@ nav ul li {
 
 nav ul li a {
     color: rgb(89, 89, 228);
-    font-weight: bolder;
-    text-shadow: 0 0 0px black;
+    font-weight: 900;
+    text-shadow: 0 0 0px rgb(89, 89, 228);
     text-decoration: none;
     padding: 8px 10px;
 }
@@ -133,7 +133,8 @@ nav ul a:not(.active):hover {
     border: none;
     outline: none;
     color: rgb(89, 89, 228);
-    font-weight: bolder;
+    font-weight: 900;
+    text-shadow: 0 0 0px rgb(89, 89, 228);
     padding: 8px 15px;
     background-color: inherit;
   }
@@ -162,6 +163,8 @@ nav ul a:not(.active):hover {
   .dropdown-content a {
     float: none;
     color: rgb(89, 89, 228);
+    font-weight: 900;
+    text-shadow: 0 0 0px rgb(89, 89, 228);
     padding: 8px 10px;
     text-decoration: none;
     display: block;
