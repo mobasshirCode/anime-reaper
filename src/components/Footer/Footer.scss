@@ -72,8 +72,10 @@ hr{
 }
 .icons:hover {
     transition: all 0.3s ease-in-out;
-    color: black;
     background-color:  rgb(89, 89, 228);
+    a{
+        color: black;
+    }
 }
 .cont2 {
     
