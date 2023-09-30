@@ -19,6 +19,7 @@ export default function App() {
           <Route exact path='/airing' element={<Homepage head="ONGOING ANIME" content="anime?&orderBy=popularity&status=airing" />}></Route>
           <Route exact path='/finished' element={<Homepage head="FINISHED ANIME" content="anime?&orderBy=popularity&status=complete" />}></Route>
           <Route exact path='/movies' element={<Homepage head="POPULAR MOVIES" content="anime?&orderBy=popularity&type=movie" />}></Route>
+          <Route exact path='/music' element={<Homepage head="POPULAR MUSIC" content="anime?&orderBy=score&sort=desc&type=music" />}></Route>
           <Route exact path='/all' element={<Homepage head="FAMILY ANIME" content="anime?&orderBy=score&sort=desc&rating=g" />}></Route>
           <Route exact path='/child' element={<Homepage head="CHILDREN ANIME" content="anime?&orderBy=score&sort=desc&rating=pg" />}></Route>
           <Route exact path='/teen' element={<Homepage head="TEEN ANIME" content="anime?&orderBy=score&sort=desc&rating=pg13" />}></Route>

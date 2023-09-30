@@ -57,6 +57,7 @@ setBurgerClass("burger-bar clicked")
             <li><NavLink to="/airing">ONGOING</NavLink></li>
             <li><NavLink to="/finished">FINISHED</NavLink></li>
             <li><NavLink to="/movies">MOVIES</NavLink></li>
+            <li><NavLink to="/music">MUSIC</NavLink></li>
             <div className="dropdown">
               <button className="dropbtn">RATING{" "}
               <i className="fa fa-caret-down"></i>
