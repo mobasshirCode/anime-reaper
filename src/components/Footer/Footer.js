@@ -25,8 +25,8 @@ export default function Footer() {
                             <li><Link to="/manga">MANGA</Link></li>
                         </div>
                         <div className="cont cont3"><Link>ABOUT US</Link>
-                            <div>CONTACT ME
-                                <p>mobasshir.code@gmail.com</p>
+                            <div className='contact'>CONTACT ME
+                                <a href="mailto:mobasshir.code@gmail.com"><p>mobasshir.code@gmail.com</p></a>
                             </div>
                             </div>
                         </div>
