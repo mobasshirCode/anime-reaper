@@ -21,10 +21,14 @@ nav {
   top: 0px;
   z-index: 98;
 }
-.logo{
+.blue {
+  color:rgb(89, 89, 228) ;
+  font-size: 50px;
+}
+.logo {
   flex: 1;
     color: white;
-    font-size: 34px;
+    font-size: 40px;
     font-weight:600;
     display: flex;
     justify-content: center;
@@ -271,13 +275,17 @@ nav ul a:not(.active):hover {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175 , 0.885 ,0.32 , 1.275) 0.5s;
 }
-    
-    nav ul li a {
-      margin: 0.2rem 0.5rem;
-    }
-    .logo {
-      font-size: 24px;
-    }
+
+nav ul li a {
+  margin: 0.2rem 0.5rem;
+}
+.logo {
+  font-size: 24px;
+}
+.blue {
+  font-size: 34px;
+  
+}
     .search {
       margin: 15px 15px;
     }

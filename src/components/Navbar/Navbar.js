@@ -53,7 +53,7 @@ window.onload = calcScrollValue;
     <> 
     <div className="header">   
         <div className="logo">
-          <a href='/'><h3>ANIME REAPER</h3></a>
+          <a href='/'><p>ANI<span className="blue">M</span>E <span className="blue">R</span>EAPER</p></a>
         </div> 
         <div className="search">
         <input type="search" name="search"  className={style}  value={searchValue} onChange={handleInputChange} />
@@ -70,6 +70,7 @@ window.onload = calcScrollValue;
         </div>
           <ul className={menuOpen ? "open" : ""}>
             <li><NavLink to="/">HOME</NavLink></li>
+            <li><NavLink to="/popular">POPULAR</NavLink></li>
             <li><NavLink to="/top">TOP ANIME</NavLink></li>
             <li><NavLink to="/upcoming">UPCOMING</NavLink></li>
             <li><NavLink to="/airing">ONGOING</NavLink></li>
