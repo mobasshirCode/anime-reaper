@@ -42,11 +42,11 @@ export default function Home() {
       <Slider {...settings1}>
           <div className='slide'>
             <img src="https://wallpaper.dog/large/20466022.jpg" alt="gojo" />
-            <div className="slide-content"><h3>AOT</h3>         
+            <div className="slide-content"><h3>ATTACK ON TITAN</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/114124-44utnIatIX16.jpg" alt="gojo" />
-            <div className="slide-content"><h3>MORIARTY</h3>         
+            <div className="slide-content"><h3>MORIARTY THE PATRIOT</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg" alt="gojo" />
@@ -54,7 +54,7 @@ export default function Home() {
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/114308-VuYDoBJMbU1i.jpg" alt="gojo" />
-            <div className="slide-content"><h3>SAO</h3>         
+            <div className="slide-content"><h3>SWORD ART ONLINE</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/98035-hbrEf8ulDnAe.jpg" alt="gojo" />
@@ -62,19 +62,15 @@ export default function Home() {
           </div></div>
           <div className='slide'>
             <img src="https://wallpaperaccess.com/full/6652214.jpg" alt="gojo" />
-            <div className="slide-content"><h3>JJK</h3>         
+            <div className="slide-content"><h3>JUJUTSU KAISEN</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg" alt="gojo" />
             <div className="slide-content"><h3>DEMON SLAYER</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg" alt="gojo" />
-            <div className="slide-content"><h3>HUNTER X HUNTER</h3>         
-          </div></div>
-          <div className='slide'>
             <img src="https://wallpaperaccess.com/full/1605955.jpg" alt="gojo" />
-            <div className="slide-content"><h3>REINCARNATED AS A SLIME</h3>         
+            <div className="slide-content"><h3>THAT TIME I GOT REINCARNATED AS A SLIME</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg" alt="gojo" />
@@ -88,7 +84,7 @@ export default function Home() {
     </div>
     <div className="main-page">
   <div className="slider1">
-    <div className="headd"><h2>POPULAR</h2>
+    <div className="headd"><h2><span className="blue">P</span>OPULAR</h2>
     <Link to="/popular"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
@@ -112,7 +108,7 @@ export default function Home() {
     </Slider>
   </div>
   <div className="slider2">
-    <div className="headd"><h2>MOVIES</h2>
+    <div className="headd"><h2><span className="blue">M</span>OVIES</h2>
   <Link to="/movies"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
@@ -135,7 +131,7 @@ export default function Home() {
      </div>
     </Slider></div>
   <div className="slider3">
-    <div className="headd"><h2>MANGA</h2>
+    <div className="headd"><h2><span className="blue">M</span>ANGA</h2>
   <Link to="manga"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">

@@ -1,6 +1,6 @@
 
 .slider {
-    max-width: 90%;
+    max-width: 89%;
     margin: auto;
   }
   
@@ -15,21 +15,30 @@
     width: 100%;
     height: 400px;
     margin: 10px 0;
+    
   }
-  
+
+  .slick-dots li button:before{
+    color: #fff;
+    opacity: .25;
+    margin-top: -20px;
+}
+.slick-dots li.slick-active button:before {
+    color: rgb(89, 89, 228);
+    opacity: 1;
+  }
   .slide-content {
     position: absolute;
-    bottom: 20px; 
-    left: 0;
+    bottom: 10px; 
     right: 0;
-    background-color: rgba(0, 0, 0, 0.42); 
     color: #fff;
-    padding: 10px;
   }
   
   .slide-content h3 {
-    font-size: 1.5rem;
+    font-size: 30px;
+    padding: 20px 25px;
     margin: 0;
+    text-shadow: 0 0 4px black;
   }
   
   .slide-content p {
@@ -63,10 +72,15 @@
         text-decoration: none;
         color: white;
     }
+    .slick-dots li button:before{
+        color: #fff;
+        display: none;
+    }
 }
 .headd {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0 15px 0;
 }
 .butt {
@@ -98,9 +112,40 @@
     height: 300px;
     border-radius: 15px;
     border-radius: 15px 15px 15px 15px;
-    margin: -10px;
-
+    // margin: -10px;
  }
+}
+.slider .slick-next:before {
+    display: block;
+    font-size: 40px;
+    line-height: 0;
+    opacity: .75;
+    background-color: #ffffff85;
+    border: none;
+    color: rgb(89, 89, 228);
+    position: absolute;
+    right: -25px;
+}
+.slick-prev:before{
+    font-size: 40px;
+    line-height: 0;
+    opacity: .75;
+    color: rgb(89, 89, 228);
+    position: absolute;
+    left: -25px;
+}
+.main-page .slick-next:before {
+    font-size: 40px;
+    line-height: 0;
+    opacity: .75;
+    background-color: #ffffff85;
+    border: none;
+    color: rgb(89, 89, 228);
+    position: absolute;
+    right: 43px;
+}
+.inner-slide img:hover {
+    transform: scale(1.05);
 }
 .top1 {
     display: block;
@@ -110,6 +155,9 @@
   @media screen and (max-width:700px) {
     .slide img {
         height: 180px;
+    }
+    .slide-content h3 {
+        font-size: 15px;
     }
     .main-page {
     
@@ -124,7 +172,16 @@
     .top1 {
         display: none;
     }
-    // .slider1 {
-    //     margin: auto;
-    // }
+    .slider .slick-next:before , .slider .slick-prev:before {
+        display: none;
+    }
+    .main-page .slick-next:before{
+        margin-right: -65px;
+    }
+    .inner-slide{
+        margin: 0 10px;
+    }
+    .slider {
+        max-width: 86%;
+    }
   }
