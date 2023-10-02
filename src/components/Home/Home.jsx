@@ -1,5 +1,6 @@
-import React from 'react'
+import React , {useState,useEffect} from 'react'
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import './Home.scss'
 export default function Home() {
     var settings1 = {
@@ -7,10 +8,34 @@ export default function Home() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
-        pauseOnHover: true
+        pauseOnHover: false
       };
+      const [slidesToShow, setSlidesToShow] = useState(1)
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow,
+        slidesToScroll: 1
+      };
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth > 800) {
+            setSlidesToShow(4);
+          } else {
+            setSlidesToShow(1);
+          }
+        };
+        window.addEventListener('resize', handleResize);
+    
+        handleResize();
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
   return (
     <>
             <div className='slider'>
@@ -62,11 +87,80 @@ export default function Home() {
         </Slider>
     </div>
     <div className="main-page">
-        <div className="slider1"></div>
-        <div className="slider2"></div>
-        <div className="slider3"></div>
-        <div className="top1"></div>
-    </div>
+  <div className="slider1">
+    <div className="headd"><h2>POPULAR</h2>
+    <Link to="/popular"><button className='butt'>More</button></Link></div>
+    <Slider {...settings}>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+     </div>
+    </Slider>
+  </div>
+  <div className="slider2">
+    <div className="headd"><h2>MOVIES</h2>
+  <Link to="/movies"><button className='butt'>More</button></Link></div>
+    <Slider {...settings}>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+     </div>
+    </Slider></div>
+  <div className="slider3">
+    <div className="headd"><h2>MANGA</h2>
+  <Link to="manga"><button className='butt'>More</button></Link></div>
+    <Slider {...settings}>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+     </div>
+    </Slider></div>
+  <div className="top1">
+    <h2>RANKING</h2>
+  </div>
+</div>
         <div className='row1'>
         <p>Popular Anime</p>
     </div>
