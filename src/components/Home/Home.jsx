@@ -90,7 +90,7 @@ export default function Home() {
     </div>
     <div className="main-page">
   <div className="slider1">
-    <div className="headd"><h2><span className="blue">P</span>OPULAR</h2>
+    <div className="headd"><h2><span className="blues">P</span>OPULAR</h2>
     <Link to="/popular"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
@@ -126,7 +126,7 @@ export default function Home() {
     </Slider>
   </div>
   <div className="slider2">
-    <div className="headd"><h2><span className="blue">M</span>OVIES</h2>
+    <div className="headd"><h2><span className="blues">M</span>OVIES</h2>
   <Link to="/movies"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
@@ -161,7 +161,7 @@ export default function Home() {
      </div>
     </Slider></div>
   <div className="slider3">
-    <div className="headd"><h2><span className="blue">M</span>ANGA</h2>
+    <div className="headd"><h2><span className="blues">M</span>ANGA</h2>
   <Link to="manga"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
@@ -183,7 +183,7 @@ export default function Home() {
         <img src="https://cdn.myanimelist.net/images/manga/1/157897l.jpg" alt="berserk" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/manga/2/166124l.jpg" alt="grandblue" />
+        <img src="https://cdn.myanimelist.net/images/manga/2/166124l.jpg" alt="grandblues" />
      </div>
      <div className="inner-slide">
         <img src="https://cdn.myanimelist.net/images/manga/3/120337l.jpg" alt="jobless" />
@@ -196,12 +196,49 @@ export default function Home() {
      </div>
     </Slider></div>
   <div className="top1">
-    <h2>RANKING</h2>
+    <h2><span className="blues">R</span>ANKING</h2>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div className="panel">
+      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
   </div>
 </div>
-        <div className='row1'>
-        <p>Popular Anime</p>
-    </div>
     </>
   )
 }
