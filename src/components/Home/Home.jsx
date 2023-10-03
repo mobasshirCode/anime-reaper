@@ -22,9 +22,15 @@ export default function Home() {
       };
       useEffect(() => {
         const handleResize = () => {
-          if (window.innerWidth > 800) {
+          if (window.innerWidth > 1600) {
             setSlidesToShow(4);
-          } else {
+          } else if (window.innerWidth > 1200 && window.innerWidth <= 1600) {
+            setSlidesToShow(3);
+          }
+          else if (window.innerWidth > 760 && window.innerWidth <= 1200) {
+            setSlidesToShow(2);
+          }
+          else {
             setSlidesToShow(1);
           }
         };
