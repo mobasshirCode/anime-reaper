@@ -8,7 +8,7 @@ export default function Home() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: false
       };
@@ -88,22 +88,34 @@ export default function Home() {
     <Link to="/popular"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+        <img src="https://cdn.myanimelist.net/images/anime/1286/99889l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/12/85221l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/1301/93586l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/2/70187l.jpg" alt="try1" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/5/73474l.jpg" alt="try1" />
      </div>
      <div className="inner-slide">
         <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+        <img src="https://cdn.myanimelist.net/images/anime/12/76049l.jpg" alt="opm" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+        <img src="https://cdn.myanimelist.net/images/anime/11/39717l.jpg" alt="try1" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+        <img src="https://cdn.myanimelist.net/images/anime/1498/134443l.jpg" alt="try1" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/47347l.jpg" alt="try1" />
+        <img src="https://cdn.myanimelist.net/images/anime/1664/103275l.jpg" alt="try1" />
      </div>
     </Slider>
   </div>
@@ -112,22 +124,34 @@ export default function Home() {
   <Link to="/movies"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/5/87048l.jpg" alt="yourname" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/1122/96435l.jpg" alt="silentvoice" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/1880/101146l.jpg" alt="weathering" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/1557/123313l.jpg" alt="sao" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/1825/110716l.jpg" alt="violet" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/13/17405l.jpg" alt="try2" />
+        <img src="https://cdn.myanimelist.net/images/anime/1085/90759l.jpg" alt="ngnl" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/12/52415l.jpg" alt="patema" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/1768/93291l.jpg" alt="pancreas" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/13/47083l.jpg" alt="fairytail" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/anime/1598/128450l.jpg" alt="suzume" />
      </div>
     </Slider></div>
   <div className="slider3">
@@ -135,22 +159,34 @@ export default function Home() {
   <Link to="manga"><button className='butt'>More</button></Link></div>
     <Slider {...settings}>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/1/129447l.jpg" alt="rezero" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/3/235363l.jpg" alt="elite" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/3/258224l.jpg" alt="monster" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/3/188896l.jpg" alt="kaguya" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/2/253146l.jpg" alt="onepiece" />
      </div>
      <div className="inner-slide">
-        <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" alt="try3" />
+        <img src="https://cdn.myanimelist.net/images/manga/1/157897l.jpg" alt="berserk" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/manga/2/166124l.jpg" alt="grandblue" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/manga/3/120337l.jpg" alt="jobless" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/manga/3/161645l.jpg" alt="abyss" />
+     </div>
+     <div className="inner-slide">
+        <img src="https://cdn.myanimelist.net/images/manga/3/216464l.jpg" alt="chainsaw" />
      </div>
     </Slider></div>
   <div className="top1">
