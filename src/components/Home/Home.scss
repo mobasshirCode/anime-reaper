@@ -153,7 +153,20 @@
     h2{
         margin: 2px 0 6px 0;
     }
-}
+    .topbtn {
+        margin: auto;
+        width: 100%;
+     }
+    }
+    .btnbtn {
+        width: 90%;
+        height: 40px;
+        color: #fff;
+        background-color: rgb(89, 89, 228);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 .blues{
     font-size: 35px;
     color: rgb(89, 89, 228);
@@ -164,6 +177,8 @@
     border-radius: 5px;
     height: 80px;
     margin: 10px 0;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 4px black;
     display: flex;
     align-items: center;
     position: relative;
@@ -179,6 +194,7 @@
         margin-left: 80px;
         height: 100%;
     }
+   
     .fa-crown{
         font-size: 20px;
         color: goldenrod;
@@ -192,8 +208,16 @@
         font-size: 20px;
         font-weight: 900;
     }
+    transition: all 0.5s ease-in-out;
 }
-  
+.panel:hover{
+    cursor: pointer;
+    height: 100px;
+    transition: all 0.5s ease-in-out;
+    i{
+        margin-top: 20px;
+    }
+   }
   @media screen and (max-width:760px) {
     .slide img {
         height: 180px;

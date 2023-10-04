@@ -198,7 +198,7 @@ export default function Home() {
     </Slider></div>
   <div className="top1">
     <div className="headd"><h2><span className="blues">R</span>ANKING</h2>
-    <Link to="/top"><button className='butt'>More</button></Link></div>
+   </div>
     <div className="panel">
     <i class="fa-solid fa-crown"></i>
     <i className="fa-solid fa-1 fa-beat"></i>
@@ -245,6 +245,7 @@ export default function Home() {
       <img src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg" alt="" />
       <p>FRIEREN</p>
     </div>
+    <div className="topbtn"> <Link to="/top"><button className='btnbtn'>SHOW ALL</button></Link></div>
   </div>
 </div>
     </>
