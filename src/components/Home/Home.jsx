@@ -1,6 +1,7 @@
 import React , {useState,useEffect} from 'react'
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
+
 import './Home.scss'
 export default function Home() {
     var settings1 = {
@@ -55,12 +56,12 @@ export default function Home() {
             <div className="slide-content"><h3>MORIARTY THE PATRIOT</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg" alt="gojo" />
-            <div className="slide-content"><h3>DEATH NOTE</h3>         
-          </div></div>
-          <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/114308-VuYDoBJMbU1i.jpg" alt="gojo" />
             <div className="slide-content"><h3>SWORD ART ONLINE</h3>         
+          </div></div>
+          <div className='slide'>
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg" alt="gojo" />
+            <div className="slide-content"><h3>DEATH NOTE</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/98035-hbrEf8ulDnAe.jpg" alt="gojo" />
@@ -71,12 +72,12 @@ export default function Home() {
             <div className="slide-content"><h3>JUJUTSU KAISEN</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg" alt="gojo" />
-            <div className="slide-content"><h3>DEMON SLAYER</h3>         
-          </div></div>
-          <div className='slide'>
             <img src="https://wallpaperaccess.com/full/1605955.jpg" alt="gojo" />
             <div className="slide-content"><h3>THAT TIME I GOT REINCARNATED AS A SLIME</h3>         
+          </div></div>
+          <div className='slide'>
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg" alt="gojo" />
+            <div className="slide-content"><h3>DEMON SLAYER</h3>         
           </div></div>
           <div className='slide'>
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg" alt="gojo" />
@@ -196,49 +197,58 @@ export default function Home() {
      </div>
     </Slider></div>
   <div className="top1">
-    <h2><span className="blues">R</span>ANKING</h2>
+    <div className="headd"><h2><span className="blues">R</span>ANKING</h2>
+    <Link to="/top"><button className='butt'>More</button></Link></div>
     <div className="panel">
+    <i class="fa-solid fa-crown"></i>
+    <i className="fa-solid fa-1 fa-beat"></i>
       <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>FULLMETAL ALCHEMIST</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-2 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1935/127974l.jpg" alt="" />
+      <p>STEINS; GATE</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-3 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/3/72078l.jpg" alt="" />
+      <p>GINTAMA</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-4 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1908/135431l.jpg" alt="" />
+      <p>BLEACH : TYBW</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-5 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1517/100633l.jpg" alt="" />
+      <p>ATTACK ON TITAN</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-6 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1160/122627l.jpg" alt="" />
+      <p>KAGUYA SAMA : LOVE IS WAR</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-7 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1337/99013l.jpg" alt="" />
+      <p>HUNTER X HUNTER</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-8 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/13/13225l.jpg" alt="" />
+      <p>LEGEND OF THE GALACTIC HEROES</p>
     </div>
     <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div className="panel">
-      <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="" />
-      <p>Lorem ipsum dolor sit amet.</p>
+      <i className="fa-solid fa-9 fa-beat"></i>
+      <img src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg" alt="" />
+      <p>FRIEREN</p>
     </div>
   </div>
 </div>
     </>
   )
 }
+
+
