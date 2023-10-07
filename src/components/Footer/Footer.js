@@ -34,13 +34,13 @@ export default function Footer() {
                     <hr/>
                     <div className="bottom">
                         <div className="icon">
-                            <div className="icons">
+                            <div className="icons"id='linkedin'>
                                <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/mobasshircode/"> <FaLinkedinIn /></a>
                             </div>
-                            <div className="icons">
+                            <div className="icons" id='github'>
                                <a target='_blank' rel="noreferrer" href="https://github.com/mobasshirCode"> <FaGithub /></a>
                             </div>
-                            <div className="icons">
+                            <div className="icons" id='insta'>
                                <a target='_blank' rel="noreferrer" href="https://www.instagram.com/r_mobasshir/"> <FaInstagram /></a>
                             </div>
                     </div>
