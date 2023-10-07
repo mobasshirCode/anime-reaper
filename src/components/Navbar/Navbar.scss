@@ -23,12 +23,12 @@ nav {
 }
 .blue {
   color:rgb(89, 89, 228) ;
-  font-size: 48px;
+  font-size: 50px;
 }
 .logo {
   flex: 1;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     font-weight:600;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ nav {
 .search:hover {
   .sbox , .sbox1 {
   transition: width 2s ease-in-out;
-  margin-top: 1px;
+  margin-top: 10px;
   margin-right: 5px;
   width: 250px;
   height: 30px;
@@ -63,7 +63,7 @@ nav {
   transition:  width 2s ease-in-out;
   width: 1px;
   margin-right: 5px;
-  margin-top: 1px;
+  margin-top: 10px;
   height: 30px;
   border: 0;
   outline: 0;
@@ -73,7 +73,7 @@ nav {
 }
 .sbox1 {
   transition: width 2s ease-in-out;
-  margin-top: 1px;
+  margin-top: 10px;
   width: 250px;
   height: 30px;
   border: 0;
@@ -84,10 +84,11 @@ nav {
 }
 
 #btn {
-  height: 32px;
+  height: 37px;
+  margin-top: 7px;
   margin-left: -30px;
   position: relative;
-  width: 32px;
+  width: 37px;
   border-radius: 50%;
   border: 0;
   outline: 0;
@@ -111,7 +112,7 @@ nav ul li {
   font-weight: bolder;
   text-shadow: 0 0 4px black;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 5px 0 5px;
 }
 
 nav ul li a {

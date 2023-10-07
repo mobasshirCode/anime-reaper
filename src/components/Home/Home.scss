@@ -52,6 +52,8 @@
   .main-page {
     color: white;
     display: grid;
+    overflow-x: hidden;
+    overflow-y: hidden;
     grid-template-areas:
         "slider1 top1"
         "slider2 top1"
@@ -144,14 +146,11 @@
     position: absolute;
     right: 43px;
 }
-.inner-slide img:hover {
-    transform: scale(1.05);
-}
 .top1 {
     display: block;
     margin: 10px 20px 20px -60px;
     // padding-left: 18px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     display: flex;
     flex-direction: column;
     h2{
@@ -202,8 +201,10 @@
     .fa-crown{
         font-size: 20px;
         color: goldenrod;
-        left: 42px;
-        bottom: 15px;
+        left: -35px;
+        bottom: 14px;
+        // left: 45px;
+        // bottom: 14px;
         transform: rotate(-45deg);
     }
     p{
