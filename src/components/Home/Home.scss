@@ -1,4 +1,6 @@
-
+// html , body {
+//     max-width: 100%;
+// }
 .slider {
     max-width: 89%;
     margin: auto;
@@ -148,6 +150,8 @@
 .top1 {
     display: block;
     margin: 10px 20px 20px -60px;
+    // padding-left: 18px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     h2{
@@ -198,7 +202,7 @@
     .fa-crown{
         font-size: 20px;
         color: goldenrod;
-        left: -37px;
+        left: 42px;
         bottom: 15px;
         transform: rotate(-45deg);
     }
