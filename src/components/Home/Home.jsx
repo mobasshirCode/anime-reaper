@@ -1,6 +1,7 @@
 import React , {useState,useEffect} from 'react'
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal';
 
 import './Home.scss'
 export default function Home() {
@@ -43,6 +44,18 @@ export default function Home() {
           window.removeEventListener('resize', handleResize);
         };
       }, []);
+      ScrollReveal({
+        reset: true,
+        distance: '500px',
+        duration: 2500,
+        delay: 400
+      });
+      ScrollReveal().reveal('.slider', {delay: 300 , origin:'bottom'});
+      ScrollReveal().reveal('.slider1', {delay: 500 , origin:'left'});
+      ScrollReveal().reveal('.slider2', {delay: 300 , origin:'left'});
+      ScrollReveal().reveal('.panel', {delay: 500 , origin:'right'});
+      ScrollReveal().reveal('.slider3', {delay: 300 , origin:'left'});
+
   return (
     <>
             <div className='slider'>

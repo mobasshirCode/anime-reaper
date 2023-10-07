@@ -8,12 +8,12 @@ body {
     padding-bottom: 400px;
     box-sizing: inherit;
 }
-.container {
+.fcontainer {
     
     margin-top: auto;
     width: 100%;
     min-height: 400px;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.795);
     backdrop-filter: blur(3px);

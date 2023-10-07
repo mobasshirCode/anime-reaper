@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
     return (
         <>
-            <div className="container">
+            <div className="fcontainer">
                 <div className="footer">
                     <div className="topc">
                         <div className="cont cont1">
