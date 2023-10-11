@@ -32,7 +32,20 @@ nav {
     font-weight:600;
     display: flex;
     justify-content: center;
+    position: relative;
 }
+.logo span {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 4s infinite;
+    animation-delay: 2s
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
 .header {
   display: flex;
   justify-content: space-between;

@@ -53,6 +53,7 @@ window.onload = calcScrollValue;
     <> 
     <div className="header">   
         <div className="logo">
+          {/* <a href='/'><p>ANI<span className="blue">M</span>E <span className="blue">R</span>EAPER</p></a> */}
           <a href='/'><p>ANI<span className="blue">M</span>E <span className="blue">R</span>EAPER</p></a>
         </div> 
         <div className="search">
