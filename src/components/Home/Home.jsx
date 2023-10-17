@@ -2,8 +2,18 @@ import React , {useState,useEffect} from 'react'
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
-
 import './Home.scss'
+import AOT from "../../assets/AOT.jpg"
+import death from "../../assets/DeathNote.jpg"
+import demon from "../../assets/Demon.jpg"
+import fate from "../../assets/Fate.jpg"
+import jjk from "../../assets/JJK.jpg"
+import kaguya from "../../assets/Kaguya.jpg"
+import moriarty from "../../assets/Moriarty.jpg"
+import sao from "../../assets/SAO.jpg"
+import shadow from "../../assets/Shadow.jpg"
+import slime from "../../assets/Slime.jpg"
+
 export default function Home() {
     var settings1 = {
         dots: true,
@@ -60,43 +70,43 @@ export default function Home() {
             <div className='slider'>
       <Slider {...settings1}>
           <div className='slide'>
-            <img src="https://wallpaper.dog/large/20466022.jpg" alt="gojo" />
+            <img src={AOT} alt="gojo" />
             <div className="slide-content"><h3>ATTACK ON TITAN</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/114124-44utnIatIX16.jpg" alt="gojo" />
+            <img src={moriarty} alt="gojo" />
             <div className="slide-content"><h3>MORIARTY THE PATRIOT</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/114308-VuYDoBJMbU1i.jpg" alt="gojo" />
+            <img src={sao} alt="gojo" />
             <div className="slide-content"><h3>SWORD ART ONLINE</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg" alt="gojo" />
+            <img src={death} alt="gojo" />
             <div className="slide-content"><h3>DEATH NOTE</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/98035-hbrEf8ulDnAe.jpg" alt="gojo" />
+            <img src={fate} alt="gojo" />
             <div className="slide-content"><h3>FATE APOCRYPHA</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://wallpaperaccess.com/full/6652214.jpg" alt="gojo" />
+            <img src={jjk} alt="gojo" />
             <div className="slide-content"><h3>JUJUTSU KAISEN</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://wallpaperaccess.com/full/1605955.jpg" alt="gojo" />
+            <img src={slime} alt="gojo" />
             <div className="slide-content"><h3>THAT TIME I GOT REINCARNATED AS A SLIME</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg" alt="gojo" />
+            <img src={demon} alt="gojo" />
             <div className="slide-content"><h3>DEMON SLAYER</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg" alt="gojo" />
+            <img src={kaguya} alt="gojo" />
             <div className="slide-content"><h3>KAGUYA SAMA : LOVE IS WAR</h3>         
           </div></div>
           <div className='slide'>
-            <img src="https://anibrain.ai/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fmanga%2Fbanner%2F108428-Zm90nTeodNMI.jpg&w=3840&q=90" alt="gojo" />
+            <img src={shadow} alt="gojo" />
             <div className="slide-content"><h3>EMINENCE IN SHADOW</h3>         
           </div></div>
         </Slider>
