@@ -44,7 +44,7 @@ export default function Footer() {
                                <a target='_blank' rel="noreferrer" href="https://www.instagram.com/r_mobasshir/"> <FaInstagram /></a>
                             </div>
                     </div>
-                            <div className="last"><p>Copyright © 2023 Anime Reaper. All Rights Reserved.</p></div></div>
+                            <div className="last"><p>Copyright © 2025 Anime Reaper. All Rights Reserved.</p></div></div>
                 </div>
             </div>
         </>

@@ -13,10 +13,8 @@ export default function Homepage(props) {
     const url = `https://api.jikan.moe/v4/${props.content}&limit=25&page=1`;
     let data = await fetch(url);
     let parsedData = await data.json();
-    //  setTotalPage(parsedData.pagination);
     setDetails(parsedData.data);
     setShowMore(true);
-    //  console.log(url)
   };
 
   useEffect(() => {
